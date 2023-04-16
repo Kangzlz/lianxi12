@@ -10,7 +10,7 @@ int main(void){
     printf("\a无法打开文件。");
     else{
         puts("写出姓名 身高 体重。");
-        fprintf(fp,"%-15s %6.1f %6.1f\n",name,height,weight);
+        fprintf(fp,"%-15s %6.1f %6.1f\n",name,height,weight );
         fclose(fp);
     }
     return 0;
