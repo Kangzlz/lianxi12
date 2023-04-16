@@ -5,7 +5,7 @@ int main(void){
     FILE *fp;
     time_t current=time(NULL);
     struct tm *timer=localtime(&current);
-    if((fp=fopen("dt.dat","w"))==NULL)
+    if((fp=fopen("dt_dat","w"))==NULL)
     printf("\a文件打开失败。");
     else{
         printf("写出当时日期和时间。\n");
