@@ -13,7 +13,7 @@ int main(void){
             if(ch=='\n')
             linenum++;
         }
-        printf("文件共有%d行。\n");
+        printf("文件共有%d行。\n",linenum);
         fclose(fp);
     }
     return 0;
