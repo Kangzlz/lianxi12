@@ -11,7 +11,7 @@ int main(void){
         if((dfp=fopen(dname,"wb"))==NULL)
         printf("\a文件打开失败。\n");
         else{
-            fread(&ch,1,1,sfp);
+            while(fread(&ch,1,1,sfp)>0)
             fwrite(&ch,1,1,dfp);
             fclose(dfp);
         }
