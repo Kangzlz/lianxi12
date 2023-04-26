@@ -19,8 +19,8 @@ int main(void){
             printf("%02x ",(unsigned)buf[i]);
             if(n<16)
             for(i=n;i<16;i++)
-            printf("  ");
-            for(i=0;i<16;i++)
+            printf("   ");
+            for(i=0;i<n;i++)
             putchar(isprint(buf[i])?buf[i]:'.');
             putchar('\n');
             count+=16;
