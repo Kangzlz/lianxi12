@@ -12,7 +12,7 @@ int main(void){
     if((fp=fopen(fname,"rb"))==NULL)
     printf("\a文件打开失败。\n");
     else{
-        while((n=fread(&buf,1,16,fp))>0){
+        while((n=fread(buf,1,16,fp))>0){
             int i;
             printf("%08lx ",count);
             for(i=0;i<n;i++)
